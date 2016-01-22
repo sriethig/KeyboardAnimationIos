@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QNv-et-K92">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FKF-g9-Y7B">
+            <objects>
+                <viewController id="QNv-et-K92" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dWy-hj-sGC"/>
+                        <viewControllerLayoutGuide type="bottom" id="fr1-a0-9lF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4zJ-8k-wQR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_v1_images_12_bb-8-body_69929f5c" translatesAutoresizingMaskIntoConstraints="NO" id="pPY-4b-X5w">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YFM-kr-Lqk">
+                                <rect key="frame" x="30" y="30" width="432" height="30"/>
+                                <color key="backgroundColor" red="0.38039215686274508" green="0.3843137254901961" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhX-9r-PEe">
+                                <rect key="frame" x="462" y="30" width="108" height="30"/>
+                                <state key="normal" title="Resign"/>
+                                <connections>
+                                    <action selector="didPressResignButton:" destination="QNv-et-K92" eventType="touchUpInside" id="sVa-a7-b7N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fr1-a0-9lF" firstAttribute="top" secondItem="pPY-4b-X5w" secondAttribute="bottom" id="2M8-01-WhL"/>
+                            <constraint firstItem="PhX-9r-PEe" firstAttribute="trailing" secondItem="4zJ-8k-wQR" secondAttribute="trailingMargin" constant="-10" id="HgV-A7-R6w"/>
+                            <constraint firstItem="PhX-9r-PEe" firstAttribute="top" secondItem="dWy-hj-sGC" secondAttribute="bottom" constant="10" id="VZO-Gt-P7R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pPY-4b-X5w" secondAttribute="trailing" id="Yst-sZ-QuZ"/>
+                            <constraint firstItem="YFM-kr-Lqk" firstAttribute="leading" secondItem="4zJ-8k-wQR" secondAttribute="leadingMargin" constant="10" id="cug-lR-j17"/>
+                            <constraint firstItem="pPY-4b-X5w" firstAttribute="top" secondItem="dWy-hj-sGC" secondAttribute="bottom" id="dwU-lF-ydl"/>
+                            <constraint firstItem="pPY-4b-X5w" firstAttribute="leading" secondItem="4zJ-8k-wQR" secondAttribute="leadingMargin" id="h3f-97-a9T"/>
+                            <constraint firstItem="YFM-kr-Lqk" firstAttribute="width" secondItem="PhX-9r-PEe" secondAttribute="width" multiplier="4" id="iLh-oL-pM9"/>
+                            <constraint firstItem="PhX-9r-PEe" firstAttribute="leading" secondItem="YFM-kr-Lqk" secondAttribute="trailing" id="sFR-Fv-H2S"/>
+                            <constraint firstItem="YFM-kr-Lqk" firstAttribute="top" secondItem="dWy-hj-sGC" secondAttribute="bottom" constant="10" id="yph-CY-oe0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLayout" destination="2M8-01-WhL" id="nzV-mA-pHI"/>
+                        <outlet property="textInputField" destination="YFM-kr-Lqk" id="ov5-4W-2HA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PcO-ap-VTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="-212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="_v1_images_12_bb-8-body_69929f5c" width="128" height="128"/>
+    </resources>
+</document>
